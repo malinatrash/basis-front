@@ -17,12 +17,25 @@ app.use(express.json());
 let ozonCategories = [];
 let wbCategories = [];
 
+// Function to get the data directory path
+function getDataDir() {
+    // Check if running in Docker (using environment variable)
+    if (process.env.DATA_DIR) {
+        return process.env.DATA_DIR;
+    }
+    // Default to parent directory when running locally
+    return path.join(__dirname, '..');
+}
+
 // Function to load category data
 function loadCategoryData() {
     try {
+        const dataDir = getDataDir();
+        console.log(`Loading data from directory: ${dataDir}`);
+        
         // Load Ozon categories
         try {
-            const ozonData = fs.readFileSync(path.join(__dirname, '../ozon_category.json'), 'utf8');
+            const ozonData = fs.readFileSync(path.join(dataDir, 'ozon_category.json'), 'utf8');
             const ozonParsed = JSON.parse(ozonData);
             
             // Flatten the Ozon category structure
@@ -36,8 +49,8 @@ function loadCategoryData() {
         
         // Load Wildberries categories
         try {
-            const wbData = fs.readFileSync(path.join(__dirname, '../category.json'), 'utf8');
-            const wbParentsData = fs.readFileSync(path.join(__dirname, '../parents_category.json'), 'utf8');
+            const wbData = fs.readFileSync(path.join(dataDir, 'category.json'), 'utf8');
+            const wbParentsData = fs.readFileSync(path.join(dataDir, 'parents_category.json'), 'utf8');
             
             const wbRawCategories = JSON.parse(wbData);
             const wbParents = JSON.parse(wbParentsData);

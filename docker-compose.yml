@@ -4,14 +4,14 @@ services:
   # Backend API service
   backend:
     build:
-      context: .
-      dockerfile: server/Dockerfile
+      context: ./server
+      dockerfile: Dockerfile
     container_name: category-mapping-api
     volumes:
-      # Mount data files so they're accessible to the server
-      - ./ozon_category.json:/usr/src/app/ozon_category.json
-      - ./category.json:/usr/src/app/category.json
-      - ./parents_category.json:/usr/src/app/parents_category.json
+      # Mount the main directory to access category data files
+      - ./:/usr/src/app/data
+    environment:
+      - DATA_DIR=/usr/src/app/data
     ports:
       - "3000:3000"
     restart: unless-stopped

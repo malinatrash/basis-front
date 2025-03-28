@@ -2,17 +2,20 @@ FROM node:16-alpine
 
 WORKDIR /usr/src/app
 
-# Copy package files and install dependencies
-COPY package*.json ./
+# Create directories
+RUN mkdir -p /usr/src/app/data
+
+# Copy package.json and package-lock.json
+COPY package.json package-lock.json* ./
+
+# Install dependencies
 RUN npm install
 
 # Copy server files
 COPY . .
 
-# We'll use volumes to mount data files instead of copying them
-# This is handled in docker-compose.yml
-
 # Expose the port the server runs on
 EXPOSE 3000
 
+# Start the server
 CMD ["npm", "start"]
