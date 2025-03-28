@@ -1,0 +1,14 @@
+{
+  "name": "category-mapping-server",
+  "version": "1.0.0",
+  "description": "Server for handling category mapping between Ozon and Wildberries",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "fastest-levenshtein": "^1.0.16"
+  }
+}

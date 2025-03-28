@@ -1,0 +1,400 @@
+{
+  "data": [
+    {
+      "name": "Мебель мягкая",
+      "id": 7580,
+      "isVisible": true
+    },
+    {
+      "name": "Игрушки",
+      "id": 7,
+      "isVisible": true
+    },
+    {
+      "name": "Текстиль для дома",
+      "id": 8693,
+      "isVisible": true
+    },
+    {
+      "name": "Спортивная обувь",
+      "id": 3497,
+      "isVisible": true
+    },
+    {
+      "name": "Бытовая химия",
+      "id": 8614,
+      "isVisible": true
+    },
+    {
+      "name": "Обувь",
+      "id": 2,
+      "isVisible": true
+    },
+    {
+      "name": "Рукоделие",
+      "id": 1284,
+      "isVisible": true
+    },
+    {
+      "name": "Техника для кухни",
+      "id": 1521,
+      "isVisible": true
+    },
+    {
+      "name": "Белье",
+      "id": 4,
+      "isVisible": true
+    },
+    {
+      "name": "Красота",
+      "id": 49,
+      "isVisible": true
+    },
+    {
+      "name": "Хранение вещей",
+      "id": 1598,
+      "isVisible": true
+    },
+    {
+      "name": "Ноутбуки и компьютеры",
+      "id": 6238,
+      "isVisible": true
+    },
+    {
+      "name": "Электроника",
+      "id": 479,
+      "isVisible": true
+    },
+    {
+      "name": "Периферия и аксессуары",
+      "id": 6237,
+      "isVisible": true
+    },
+    {
+      "name": "Книжная продукция и диски",
+      "id": 786,
+      "isVisible": true
+    },
+    {
+      "name": "Посуда и инвентарь",
+      "id": 1590,
+      "isVisible": true
+    },
+    {
+      "name": "Для праздника",
+      "id": 257,
+      "isVisible": true
+    },
+    {
+      "name": "Телевизоры и аудиотехника",
+      "id": 6260,
+      "isVisible": true
+    },
+    {
+      "name": "Мототовары",
+      "id": 6731,
+      "isVisible": true
+    },
+    {
+      "name": "Хозяйственные товары",
+      "id": 1077,
+      "isVisible": true
+    },
+    {
+      "name": "Электротранспорт",
+      "id": 2207,
+      "isVisible": true
+    },
+    {
+      "name": "Канцелярские товары",
+      "id": 571,
+      "isVisible": true
+    },
+    {
+      "name": "Ювелирные украшения",
+      "id": 204,
+      "isVisible": true
+    },
+    {
+      "name": "Бижутерия",
+      "id": 200,
+      "isVisible": true
+    },
+    {
+      "name": "Товары для малышей",
+      "id": 883,
+      "isVisible": true
+    },
+    {
+      "name": "Аксессуары для малышей",
+      "id": 4823,
+      "isVisible": true
+    },
+    {
+      "name": "Аксессуары для волос",
+      "id": 1465,
+      "isVisible": true
+    },
+    {
+      "name": "Сантехника",
+      "id": 2051,
+      "isVisible": true
+    },
+    {
+      "name": "Профессиональные музыкальные инструменты",
+      "id": 3324,
+      "isVisible": true
+    },
+    {
+      "name": "Бытовая техника",
+      "id": 657,
+      "isVisible": true
+    },
+    {
+      "name": "Строительные материалы",
+      "id": 2050,
+      "isVisible": true
+    },
+    {
+      "name": "Отделочные материалы",
+      "id": 8555,
+      "isVisible": true
+    },
+    {
+      "name": "Оргтехника",
+      "id": 858,
+      "isVisible": true
+    },
+    {
+      "name": "Спортивная одежда",
+      "id": 1513,
+      "isVisible": true
+    },
+    {
+      "name": "Электроинструмент и оборудование",
+      "id": 8751,
+      "isVisible": true
+    },
+    {
+      "name": "Одежда для малышей",
+      "id": 4607,
+      "isVisible": true
+    },
+    {
+      "name": "Продукты",
+      "id": 3109,
+      "isVisible": true
+    },
+    {
+      "name": "Ветаптека",
+      "id": 8671,
+      "isVisible": true
+    },
+    {
+      "name": "Здоровье",
+      "id": 4268,
+      "isVisible": true
+    },
+    {
+      "name": "Белье для малышей",
+      "id": 4735,
+      "isVisible": true
+    },
+    {
+      "name": "Товары для животных",
+      "id": 723,
+      "isVisible": true
+    },
+    {
+      "name": "Одежда",
+      "id": 1,
+      "isVisible": true
+    },
+    {
+      "name": "Головные уборы",
+      "id": 6,
+      "isVisible": true
+    },
+    {
+      "name": "Аксессуары",
+      "id": 3,
+      "isVisible": true
+    },
+    {
+      "name": "Декор интерьера",
+      "id": 8695,
+      "isVisible": true
+    },
+    {
+      "name": "Освещение",
+      "id": 8694,
+      "isVisible": true
+    },
+    {
+      "name": "Спортивный товар",
+      "id": 239,
+      "isVisible": true
+    },
+    {
+      "name": "Автозапчасти",
+      "id": 760,
+      "isVisible": true
+    },
+    {
+      "name": "Крупная бытовая техника",
+      "id": 5495,
+      "isVisible": true
+    },
+    {
+      "name": "Товары для курения",
+      "id": 6249,
+      "isVisible": true
+    },
+    {
+      "name": "Игровые консоли и игры",
+      "id": 6256,
+      "isVisible": true
+    },
+    {
+      "name": "Товары для взрослых",
+      "id": 5038,
+      "isVisible": true
+    },
+    {
+      "name": "Мебель для сна",
+      "id": 8745,
+      "isVisible": true
+    },
+    {
+      "name": "Шины и диски",
+      "id": 8893,
+      "isVisible": true
+    },
+    {
+      "name": "Умный дом и безопасность",
+      "id": 6259,
+      "isVisible": true
+    },
+    {
+      "name": "Спортивные аксессуары",
+      "id": 1605,
+      "isVisible": true
+    },
+    {
+      "name": "Мебель садовая",
+      "id": 8748,
+      "isVisible": true
+    },
+    {
+      "name": "Детское питание",
+      "id": 2638,
+      "isVisible": true
+    },
+    {
+      "name": "Автоэлектроника",
+      "id": 6240,
+      "isVisible": true
+    },
+    {
+      "name": "Смартфоны и аксессуары",
+      "id": 6258,
+      "isVisible": true
+    },
+    {
+      "name": "Товары для отдыха и кемпинга",
+      "id": 6945,
+      "isVisible": true
+    },
+    {
+      "name": "Сетевое оборудование",
+      "id": 6257,
+      "isVisible": true
+    },
+    {
+      "name": "Мебель малых форм",
+      "id": 8747,
+      "isVisible": true
+    },
+    {
+      "name": "Автохимия и автокосметика",
+      "id": 8896,
+      "isVisible": true
+    },
+    {
+      "name": "Фото и Видеотехника",
+      "id": 6261,
+      "isVisible": true
+    },
+    {
+      "name": "Мебель корпусная и мебель для хранения",
+      "id": 8746,
+      "isVisible": true
+    },
+    {
+      "name": "Аккумуляторы для ТС",
+      "id": 8894,
+      "isVisible": true
+    },
+    {
+      "name": "Масла и технические жидкости",
+      "id": 8892,
+      "isVisible": true
+    },
+    {
+      "name": "Автоаксессуары и дополнительное оборудование",
+      "id": 8891,
+      "isVisible": true
+    },
+    {
+      "name": "Все для садоводства",
+      "id": 6943,
+      "isVisible": true
+    },
+    {
+      "name": "Спортивное питание и косметика",
+      "id": 1081,
+      "isVisible": true
+    },
+    {
+      "name": "Шторы и аксессуары",
+      "id": 1616,
+      "isVisible": true
+    },
+    {
+      "name": "Садовая техника",
+      "id": 2240,
+      "isVisible": true
+    },
+    {
+      "name": "Мебель офисная и торговое оборудование",
+      "id": 2479,
+      "isVisible": true
+    },
+    {
+      "name": "Спецодежда и СИЗы",
+      "id": 6119,
+      "isVisible": true
+    },
+    {
+      "name": "Ручной инструмент и оснастка",
+      "id": 1162,
+      "isVisible": true
+    },
+    {
+      "name": "Аксессуары для обуви",
+      "id": 739,
+      "isVisible": true
+    },
+    {
+      "name": "Садовые инструменты",
+      "id": 6946,
+      "isVisible": true
+    }
+  ],
+  "error": false,
+  "errorText": "",
+  "additionalErrors": null
+}
+
+
+

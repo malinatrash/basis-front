@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маркетплейс Categories Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Маркетплейс Categories Viewer</h1>
+        
+        <div class="app-tabs">
+            <button id="viewer-tab" class="app-tab active">Просмотр категорий</button>
+            <button id="mapper-tab" class="app-tab">Сопоставление категорий</button>
+        </div>
+        
+        <!-- Category Viewer Section -->
+        <div id="viewer-section" class="app-section active">
+            <div class="platform-toggle">
+                <button id="ozon-btn" class="platform-btn active">Ozon</button>
+                <button id="wb-btn" class="platform-btn">Wildberries</button>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Поиск по категориям...">
+                <button id="search-btn">Поиск</button>
+            </div>
+            
+            <div class="categories-container">
+                <div id="categories-tree"></div>
+            </div>
+        </div>
+        
+        <!-- Category Mapper Section -->
+        <div id="mapper-section" class="app-section">
+            <div class="mapper-controls">
+                <div class="mapper-info">
+                    <h3>Инструмент сопоставления категорий</h3>
+                    <p>Сопоставьте категории Ozon и Wildberries, чтобы создать карту соответствий.</p>
+                </div>
+                <div class="mapping-tools">
+                    <div class="mapping-tool-group">
+                        <button id="auto-map-btn" class="tool-btn"><span class="icon">&#9881;</span> Автоматическое сопоставление</button>
+                        <div class="matching-mode">
+                            <span class="mode-label">Режим сопоставления:</span>
+                            <div class="mode-options">
+                                <label class="mode-option">
+                                    <input type="radio" name="matching-mode" id="exact-match" value="exact" checked>
+                                    <span>Точное</span>
+                                </label>
+                                <label class="mode-option">
+                                    <input type="radio" name="matching-mode" id="fuzzy-match" value="fuzzy">
+                                    <span>Нестрогое</span>
+                                </label>
+                            </div>
+                            <div class="fuzzy-settings" id="fuzzy-settings">
+                                <label for="similarity-threshold">Порог сходства: <span id="threshold-value">0.7</span></label>
+                                <input type="range" id="similarity-threshold" min="0.5" max="0.9" step="0.05" value="0.7">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mapping-tool-group">
+                        <button id="save-mapping-btn" class="tool-btn"><span class="icon">&#128190;</span> Сохранить карту</button>
+                        <button id="load-mapping-btn" class="tool-btn"><span class="icon">&#128194;</span> Загрузить карту</button>
+                        <button id="export-mapping-btn" class="tool-btn"><span class="icon">&#11015;</span> Экспорт JSON</button>
+                    </div>
+                </div>
+                <div class="search-tools">
+                    <div class="search-field">
+                        <input type="text" id="ozon-search" placeholder="Поиск по Ozon...">
+                    </div>
+                    <div class="search-field">
+                        <input type="text" id="wb-search" placeholder="Поиск по Wildberries...">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mapping-container">
+                <div class="mapping-panel ozon-panel">
+                    <h3>Ozon Категории</h3>
+                    <div id="ozon-categories" class="mapping-tree"></div>
+                </div>
+                
+                <div class="mapping-connections">
+                    <div id="connections-container" class="connections-list"></div>
+                    <div class="mapping-actions">
+                        <button id="connect-btn" class="action-btn"><span class="icon">&#8594;</span></button>
+                        <button id="disconnect-btn" class="action-btn"><span class="icon">&#10060;</span></button>
+                    </div>
+                </div>
+                
+                <div class="mapping-panel wb-panel">
+                    <h3>Wildberries Категории</h3>
+                    <div id="wb-categories" class="mapping-tree"></div>
+                </div>
+            </div>
+            
+            <div class="mapping-results">
+                <h3>Результаты сопоставления</h3>
+                <div id="mapping-stats" class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-label">Всего сопоставлений:</span>
+                        <span id="total-mappings" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Ozon категорий без соответствия:</span>
+                        <span id="ozon-unmapped" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">WB категорий без соответствия:</span>
+                        <span id="wb-unmapped" class="stat-value">0</span>
+                    </div>
+                </div>
+                <div id="mapping-list" class="mapping-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Custom Notification System -->
+    <div id="notification-container" class="notification-container"></div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div id="loading-message" class="loading-message">Идет обработка...</div>
+            <div id="loading-progress" class="loading-progress">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

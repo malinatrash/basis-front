@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  # Backend API service
+  backend:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    container_name: category-mapping-api
+    volumes:
+      # Mount data files so they're accessible to the server
+      - ./ozon_category.json:/usr/src/app/ozon_category.json
+      - ./category.json:/usr/src/app/category.json
+      - ./parents_category.json:/usr/src/app/parents_category.json
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+  # Frontend service
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: category-mapping-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
